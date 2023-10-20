@@ -4,7 +4,7 @@ import app from './app'
 async function boostrap() {
   try {
     await mongoose.connect(config.database_url as string)
-    console.log(`Datqabase is connected Successfully`)
+    console.log(`Database is connected Successfully`)
 
     app.listen(config.port, () => {
       console.log(`Application listening on port ${config.port}`)
